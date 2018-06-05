@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taylor's Portfolio</title>
+         <style>
+         @import url('https://fonts.googleapis.com/css?family=Pacifico');
+            body {
+                background: rgb(255, 255, 255);
+                color: rgb(50, 50, 50);
+                padding: 1px;
+                font-family: pacifico;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: normal;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(0, 102, 102);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 8px;
+                border: 2.5px solid aquamarine;
+                border-radius: 10px 35px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(255, 255, 255);
+                display: flex;
+                background: rgb(200, 200, 200);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 8px;
+                border: 2.5px solid aquamarine;
+                border-radius: 35px;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 15px;
+            }
+            .sidebar img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+                color: rgb(0, 0, 0);
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="all-contents">
+            <nav>
+                <header>Taylor's Portfolio Website</header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="sidebar">
+                    <img src="https://worcestercanoeclub.files.wordpress.com/2018/01/mf6gb1o1.jpg"></img>
+                </div>
+                
+                <div class="content">
+                    <header>Taylor Le</header>
+                    <p>Student at Woodlawn High</p>
+                    <section class="interests">
+                        <header>Interests</header>
+                        <ul>
+                            <li>Photo Editing</li>
+                            <li>Graphics Design</li>
+                            <li>Games and Stuff</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
