@@ -90,28 +90,28 @@
                      */
                     for (var i = 0; i < circles.length; i++) {
                         // TODO 5 : Access one circle at time from the circles Array //
-                        //circle = 
+                        circle = circles[i];
                         
                         // TODO 6 : Update the circles position //
-                        
+                        physikz.updatePosition(circle);
                         
                         // TODO 7 : YOUR CODE STARTS HERE //////////////////////
                         
-                        if ( / * test for the circle exiting the right-side * / ) {
-                            // your code to place circle exactly off the stage at the left-side //
-                            
-                        } else if ( / * test for the circle exiting the left-side * / ) {
-                            // your code to place circle exactly off the stage at the right-side //
-                            
-                        }
-                        
-                        if ( / * test for the circle exiting the top * / ) {
-                            // code to place circle exactly off the stage at the bottom //
-                            
-                        } else if ( / * test for the circle exiting the bottom * / ) {
-                            // your code to place circle exactly off the stage at the top //
-                            
-                        }
+                        if (circle.x > canvas.width + circle.radius) {
+                           // your code to place circle exactly off the stage at the left-side //
+                           circle.x = 0
+                       } else if (circle.x < 0) {
+                           // your code to place circle exactly off the stage at the right-side //
+                           circle.x = canvas.width
+                       }
+                       
+                       if (circle.y < 0) {
+                           // code to place circle exactly off the stage at the bottom //
+                           circle.y = canvas.height
+                       } else if (circle.y > canvas.height + circle.radius) {
+                           // your code to place circle exactly off the stage at the top //
+                           circle.y = 0
+                       }
                         
                         // YOUR TODO 7 CODE ENDS HERE //////////////////////////
                     }
