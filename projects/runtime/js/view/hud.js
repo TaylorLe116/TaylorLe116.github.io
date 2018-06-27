@@ -34,14 +34,14 @@
         hud = new createjs.Container();
         
         integrity = new createjs.Container();
-        background = draw.rect(104, 20, '#CCC');
+        background = draw.rect(104, 20, '#FFF');
         draw.rect(102, 18, '#FFF', null, null, 1, 1, background);
         integrity.addChild(background);
         
-        txtScore = draw.textfield('score : 000', "19px Arial", '#666', 'left');
+        txtScore = draw.textfield('Score : 000', "19px Arial", '#FF9B00', 'left');
         hud.addChild(txtScore);
         
-        integrityMeter = draw.rect(1, 16, '#3333CC');
+        integrityMeter = draw.rect(1, 16, '#4CFF00');
         integrityMeter.scaleX = 100;
         integrity.addChild(integrityMeter);
         hud.addChild(integrity);
@@ -66,14 +66,14 @@
         
         hud.updateScore = function (value) {
             score += value;
-            txtScore.text = 'score : ' + score + ' / ' + of;
+            txtScore.text = 'Score : ' + score + ' / ' + of;
             layout();
             setPosition();
         };
         
         hud.updateOf = function (value) {
             of += value;
-            txtScore.text = 'score : ' + score + ' / ' + of;
+            txtScore.text = 'Score : ' + score + ' / ' + of;
             layout();
             setPosition();
         };
